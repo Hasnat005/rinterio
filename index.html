@@ -48,9 +48,23 @@
                     <li class="hover:font-semibold cursor-pointer">Contact Us</li>
                 </ul>
             </div>
-            <div class="hidden md:block space-x-4">
-                <button class="btn btn-circle text-xl border-2 border-[rgb(233,233,233)]"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="btn btn-circle text-xl border-2 border-[rgb(233,233,233)]"><i class="fa-solid fa-cart-shopping"></i></button>
+            <div class="hidden md:flex space-x-4">
+                <button class="font-thin btn btn-circle text-xl border-2 border-[rgb(233,233,233)]"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn btn-circle text-xl border-2 border-[rgb(233,233,233)]">
+                    <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+                     <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
                 <button class="btn btn-primary border-none bg-[#ABEF5F] text-black hover:bg-[#99D851] text-xl font-bold rounded-3xl">Book Consult<div class="bg-[#1C1C1C] size-8 flex justify-center items-center rounded-3xl text-2xl text-white">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
                 </div></button>
@@ -131,7 +145,7 @@
                             </div>
                             <div class="space-y-3">
                                 <h1 class="text-xl text-[#494949] font-bold">Commercial</h1>
-                                <p class="text-lg text-[#494949]">Commercial spaces blend functionality and aesthetics for stylish efficiency.</p>
+                                <p class="text-base text-[#494949]">Commercial spaces blend functionality and aesthetics for stylish efficiency.</p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +156,7 @@
                             </div>
                             <div class="space-y-3">
                                 <h1 class="text-xl text-[#494949] font-bold">Residential</h1>
-                                <p class="text-lg text-[#494949]">Residential spaces blend comfort and style for personalized living.</p>
+                                <p class="text-base text-[#494949]">Residential spaces blend comfort and style for personalized living.</p>
                             </div>
                         </div>
                     </div>
@@ -167,32 +181,135 @@
                 <div class="card-body bg-[#E7C1D3] rounded-2xl">
                     <img class="w-12" src="assets/concept.png" alt="">
                   <h2 class="card-title text-xl font-bold">Concept</h2>
-                  <p class="text-[#494949] text-[1rem]">Develop barn houses blending rustic charm with modern design for uniqueness.</p>
+                  <p class="text-[#494949] text-base">Develop barn houses blending rustic charm with modern design for uniqueness.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body bg-[#EFDA6E] rounded-2xl ">
                     <img class="w-12" src="assets/flowChart.png" alt="">
                   <h2 class="card-title text-xl font-bold">Design Process</h2>
-                  <p class="text-[#494949] text-[1rem]">Plan and design to combine rustic features with contemporary style elements.</p>
+                  <p class="text-[#494949] text-base">Plan and design to combine rustic features with contemporary style elements.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body bg-[#A4DAC3] rounded-2xl">
                     <img class="w-12" src="assets/vision.png" alt="">
                   <h2 class="card-title text-xl font-bold">Supervision</h2>
-                  <p class="text-[#494949] text-[1rem]"> Oversee the project to ensure rustic and modern elements are integrated perfectly.</p>
+                  <p class="text-[#494949] text-base"> Oversee the project to ensure rustic and modern elements are integrated perfectly.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body bg-[#77AAEA] rounded-2xl">
                     <img class="w-12" src="assets/budgetPlanning.png" alt="">
                   <h2 class="card-title text-xl font-bold">Budget Planning</h2>
-                  <p class="text-[#494949] text-[1rem]">Manage costs to achieve a beautiful barn house while staying within budget.</p>
+                  <p class="text-[#494949] text-base">Manage costs to achieve a beautiful barn house while staying within budget.</p>
                 </div>
             </div>
         </div>
         <!-- how we work section ends here -->
+
+
+
+
+        <!-- interior design section starts here -->
+
+        <section class="bg-white py-8" id="services">
+          <div class="mx-auto w-[90%] lg:w-4/5">        
+            <div class="flex justify-center">
+                <button class="btn bg-[rgba(171,239,95,0.2)] rounded-3xl space-x-2 border-none text-[#494949]">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p class="text-base font-bold">Explore our interior highlights</p>
+                </button>
+            </div>
+            <h1 class="text-2xl lg:text-5xl text-[#212121] font-bold text-center mt-4">Our Interior Design Services</h1>
+            <p class="text-sm lg:text-base text-[#494949] w-[90%] mx-auto lg:w-[45%] mt-6 text-center">We create stunning and functional spaces tailored to your preferences and needs.</p>
+            
+        
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 my-10">
+              <!-- Card 1 - Modern Interiors -->
+              <div class="tooltip" data-tip="move the slider">
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                  <div class="diff aspect-[16/9] w-full">
+                    <div class="diff-item-1 relative w-full h-full">
+                      <div class="bg-red-200 text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is1.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        AFTER
+                      </div>
+                    </div>
+                    <div class="diff-item-2 relative w-full h-full">
+                      <div class="bg-red-200 text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is2.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        BEFORE
+                      </div>
+                    </div>
+                    <div class="diff-resizer"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Modern Interiors</h3>
+                    <p class="mt-2 text-gray-600">Transform your space with modern design elements that blend functionality with aesthetics.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 2 - Rustic Barn House -->
+              <div class="tooltip" data-tip="move the slider">
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                  <div class="diff aspect-[16/9] w-full">
+                    <div class="diff-item-1 relative w-full h-full">
+                      <div class="bg-primary text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is3.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        AFTER
+                      </div>
+                    </div>
+                    <div class="diff-item-2 relative w-full h-full">
+                      <div class="bg-base-200 text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is4.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        BEFORE
+                      </div>
+                    </div>
+                    <div class="diff-resizer"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Luxury Spaces</h3>
+                    <p class="mt-2 text-gray-600">Create luxurious environments that offer both elegance and comfort with our tailored design solutions.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 3 - Luxury Spaces -->
+              <div class="tooltip" data-tip="move the slider">
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                  <div class="diff aspect-[16/9] w-full">
+                    <div class="diff-item-1 relative w-full h-full">
+                      <div class="bg-base-200 text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is5.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        AFTER
+                      </div>
+                    </div>
+                    <div class="diff-item-2 relative w-full h-full">
+                      <div class="bg-primary text-primary-content grid place-content-center bg-cover bg-center" style="background-image: url('assets/is6.png');"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-white text-2xl lg:text-4xl font-black bg-gray-800 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        BEFORE
+                      </div>
+                    </div>
+                    <div class="diff-resizer"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Rustic Barn House</h3>
+                    <p class="mt-2 text-gray-600">Experience the charm of rustic barn houses with our expert design and restoration awesome services.</p>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <!-- interior design section ends here -->
+
+
+
          <!-- portfolio section starts here -->
         
         <div class="py-8 lg:py-16 bg-white">
@@ -305,6 +422,9 @@
             <i class="fa-solid fa-arrow-right -rotate-45"></i>
         </div></button>
     </footer>       
-    <!-- footer section ends here -->           
+    <!-- footer section ends here -->   
+
+
+
 </body>
 </html>
